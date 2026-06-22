@@ -7,10 +7,10 @@ botoes.forEach(function (botao) {
         console.log("fui clicado");
         let texto = botao.querySelector("span");
         if (curtiu === false) {
-            texto.textContent++;
+            texto.textContent = parseInt(texto.textContent) + 1;
             curtiu = true;
         } else {
-            texto.textContent--;
+            texto.textContent = parseInt(texto.textContent) - 1;
             curtiu = false;
         }
     }
